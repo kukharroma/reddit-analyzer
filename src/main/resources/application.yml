@@ -4,5 +4,7 @@ spring:
 
 analyzer:
   reddit:
-    url: https://www.reddit.com/api/v1/
+    url: https://www.reddit.com/api/v1
+    clientId: YVkUooCDBEA-1g
+    redirectUrl: http://localhost:8080/authorize
     clientSecret: l_AT6yjfMdPwJAKcko4DHQNm3IM

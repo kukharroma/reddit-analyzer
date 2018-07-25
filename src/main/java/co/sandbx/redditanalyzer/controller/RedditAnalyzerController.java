@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AnalyzerController {
+public class RedditAnalyzerController {
 
     private @Autowired RedditAnalyzerService redditAnalyzerService;
 
     @PostMapping("analyze/reddit/{questionId}")
-    public void analyzeQuestionId(@PathVariable("questionId") String quesionId){
+    public void analyzeQuestionId(@PathVariable("questionId") String questionId){
 
-        redditAnalyzerService.analyzeQuestion(quesionId);
+        redditAnalyzerService.analyzeQuestion(questionId);
     }
 
 }

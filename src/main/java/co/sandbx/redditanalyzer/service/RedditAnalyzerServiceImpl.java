@@ -11,6 +11,6 @@ public class RedditAnalyzerServiceImpl implements RedditAnalyzerService{
 
 
     public void analyzeQuestion(String questionId) {
-        redditAdapter.authorize();
+
     }
 }
